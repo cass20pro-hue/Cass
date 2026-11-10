@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Muzza Pizzaria em Maputo. Pizzas, cocktails e Frango à Passarinho.">
+<title>Muzza Pizzaria | Maputo</title>
+<style>
+:root{--red:#e31818;--bg:#090909;--panel:#171717;--muted:#c8c8c8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Arial,Helvetica,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#080808ed;border-bottom:2px solid var(--red);padding:15px 6%;display:flex;justify-content:space-between;align-items:center;gap:18px}
+.logo{font-size:25px;font-weight:900;font-style:italic}.logo span{color:var(--red)}
+nav{display:flex;gap:22px;flex-wrap:wrap}a{color:inherit;text-decoration:none}nav a:hover{color:#ff4a4a}
+.btn{display:inline-block;background:var(--red);color:white;padding:13px 20px;border-radius:30px;font-weight:bold}
+.hero{min-height:510px;padding:75px 7%;display:flex;align-items:center;background:linear-gradient(90deg,#050505 0%,#050505e8 42%,#05050555 100%),url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-inner{max-width:650px}.eyebrow{color:#ff5555;font-weight:bold;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(46px,8vw,86px);line-height:.95;margin:15px 0}h1 span{color:var(--red)}.lead{font-size:20px;color:#eee;line-height:1.5}
+.stats{display:flex;gap:20px;flex-wrap:wrap;margin:25px 0;color:#eee}.stats strong{color:#ffd43b}
+section{padding:55px 7%}h2{font-size:34px;margin:0 0 25px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid #343434;border-radius:15px;overflow:hidden}.card .emoji{font-size:48px;padding:25px 22px 5px}.card h3,.card p{margin:12px 22px}.card p{color:var(--muted);line-height:1.5;margin-bottom:22px}
+.features{background:#121212;display:flex;justify-content:space-around;gap:18px;flex-wrap:wrap;text-align:center;color:#eee}.features span{color:#ff4545;font-size:23px}
+.about{background:#111}.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}.muted{color:var(--muted);line-height:1.6}
+footer{border-top:1px solid #333;padding:25px 7%;color:#aaa;text-align:center}
+@media(max-width:650px){header{align-items:flex-start;flex-direction:column}nav{gap:13px;font-size:14px}.hero{min-height:470px;padding-top:55px}.stats{gap:12px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#inicio">Muzza <span>Pizzaria</span></a>
+  <nav><a href="#inicio">Início</a><a href="#menu">Menu</a><a href="#sobre">Sobre</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn" href="tel:+258846110077">Ligar: 84 611 0077</a>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="hero-inner">
+  <div class="eyebrow">Pizzaria • Maputo</div>
+  <h1>Sabor incrível,<br><span>num só lugar!</span></h1>
+  <p class="lead">Pizzas, cocktails e muito mais. Venha desfrutar de bons momentos na Muzza Pizzaria.</p>
+  <div class="stats"><div>⭐ <strong>4,1/5</strong> (117 críticas)</div><div>💰 1.000–1.200 MZN/pessoa</div><div>🟢 Aberto até às 22:30</div></div>
+  <a class="btn" href="#menu">Ver destaques do menu</a>
+ </div>
+</section>
+<section class="features">
+ <div><span>🍕</span><br>Pizzas</div><div><span>🍹</span><br>Ótimos cocktails</div><div><span>🍗</span><br>Frango à Passarinho</div><div><span>🧒</span><br>Menu infantil</div><div><span>🎉</span><br>Happy hour de comida</div>
+</section>
+<section id="menu">
+ <h2>Destaques do menu</h2>
+ <div class="cards">
+  <article class="card"><div class="emoji">🍕</div><h3>Pizzas variadas</h3><p>Uma opção deliciosa para partilhar com amigos e família.</p></article>
+  <article class="card"><div class="emoji">🍗</div><h3>Frango à Passarinho</h3><p>Um dos destaques do menu da Muzza Pizzaria.</p></article>
+  <article class="card"><div class="emoji">🍹</div><h3>Cocktails</h3><p>Bebidas para acompanhar a sua refeição.</p></article>
+ </div>
+ <p class="muted">Para conhecer o menu completo e os preços actualizados, contacte directamente a pizzaria.</p>
+</section>
+<section class="about" id="sobre">
+ <h2>Sobre a Muzza Pizzaria</h2>
+ <p class="muted">A Muzza Pizzaria fica na Avenida 25 de Setembro, em Maputo. É uma opção para quem procura pizza, cocktails e refeições num ambiente com opções para toda a família.</p>
+</section>
+<section id="contacto">
+ <h2>Visite-nos</h2>
+ <div class="contact-grid">
+  <div><h3>📍 Endereço</h3><p class="muted">25 Av. 25 de Setembro, Maputo, Moçambique</p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Muzza+Pizzaria+Maputo">Ver no Google Maps</a></div>
+  <div><h3>☎ Contacto</h3><p class="muted">84 611 0077</p><a class="btn" href="tel:+258846110077">Ligar agora</a></div>
+  <div><h3>🕙 Horário</h3><p class="muted">Informação disponível: aberto; fecha às 22:30. Confirme o horário antes de se deslocar.</p></div>
+ </div>
+</section>
+</main>
+<footer>© Muzza Pizzaria • Maputo, Moçambique</footer>
+</body>
+</html>
